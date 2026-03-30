@@ -27,7 +27,7 @@ Tools in `$PATH`:
 
 ---
 
-## Defaults
+## E.g. defaults
 
 - DP = 10  
 - VEP_PATH = /opt/miniconda3/envs/vep/bin  
@@ -43,13 +43,13 @@ Tools in `$PATH`:
 Run multiple VCFs in parallel:
 
 ```bash
-find <path-to-dir> -name "*vcf.gz" | xargs -P 4 -I {} ./vcf2maf.sh {} maf_output
+find <path-to-dir> -name "*vcf.gz" | xargs -P 4 -I {} ./vcf_to_maf.sh {} maf_output
 ```
 
 With custom parameters:
 
 ```bash
-find <path-to-dir> -name "*vcf.gz" | xargs -P 4 -I {} ./vcf2maf.sh {} maf_output 20
+find <path-to-dir> -name "*vcf.gz" | xargs -P 4 -I {} ./vcf_to_maf.sh {} maf_output 20
 ```
 
 Notes:
