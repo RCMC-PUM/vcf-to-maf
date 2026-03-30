@@ -43,13 +43,13 @@ Tools in `$PATH`:
 Run multiple VCFs in parallel:
 
 ```bash
-ls *.vcf.gz | xargs -P 4 -I {} ./vcf2maf.sh {} maf_output
+find <path-to-dir> -name "*vcf.gz" | xargs -P 4 -I {} ./vcf2maf.sh {} maf_output
 ```
 
 With custom parameters:
 
 ```bash
-ls *.vcf.gz | xargs -P 4 -I {} ./vcf2maf.sh {} maf_output 20
+find <path-to-dir> -name "*vcf.gz" | xargs -P 4 -I {} ./vcf2maf.sh {} maf_output 20
 ```
 
 Notes:
